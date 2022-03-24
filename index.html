@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #f84364;
+        margin-bottom: 80px;
+      }
+      #container {
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 40px;
+      }
+
+      #container > div {
+        border: 0.2px solid #f84364;
+      }
+
+      img {
+        height: 150px;
+        width: 150px;
+      }
+
+      #container > div {
+        display: flex;
+        cursor: pointer;
+      }
+
+      #container > div > div {
+        margin-left: 20px;
+      }
+
+      button {
+        background-color: #f84364;
+        border: 0;
+        padding: 10px 15px 10px 15px;
+        border-radius: 10px;
+        color: white;
+      }
+
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        img {
+          border-radius: 50%;
+        }
+        #container > div {
+          flex-direction: column;
+        }
+
+        #container {
+          grid-template-rows: auto;
+        }
+
+        #container > div {
+          padding: 20px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+        img {
+          border-radius: 50%;
+        }
+        #container > div {
+          flex-direction: column;
+        }
+
+        #container {
+          grid-template-rows: auto;
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        #container > div {
+          padding: 20px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Just movies</h1>
+    <div id="container">
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNuGb3WskZbGAtu-n26m6ww3y_sbhSmeR3co5-m9E05JV0Fkz"
+          alt=""
+        />
+        <div>
+          <h3>Radhe Shyam</h3>
+          <p>Releasing on 11 Mar, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://static.toiimg.com/photo/89414066.jpeg"
+          alt=""
+        />
+        <div>
+          <h3>Gangubai Khathiwadi</h3>
+          <p>Releasing on 25 Feb, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BY2E2NmNlOWUtNThjZi00YmNhLTlmNWEtYjQxYzlmZWQxZGU5XkEyXkFqcGdeQXVyOTA0NDk0NzM@._V1_.jpg"
+          alt=""
+        />
+        <div>
+          <h3>Jhund</h3>
+          <p>Releasing on 04 Mar, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://www.filmibeat.com/fanimg/movie/20615/gehraiyaan-deepika-padukone-photos-images-77085.jpg"
+          alt=""
+        />
+        <div>
+          <h3>Gehraiyaan</h3>
+          <p>Releasing on 11 Feb, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBkxgl2A2PhE_6tklFLT0bxn5NLhvhsnpXGhmXBt_zotrlVHmo"
+          alt=""
+        />
+        <div>
+          <h3>The Batman</h3>
+          <p>Releasing on 04 Mar, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAT4deET55wX0MzpBp45_7201ZndSAI8m2W52rNVeVmEbEgEW"
+          alt=""
+        />
+        <div>
+          <h3>Uncharted</h3>
+          <p>Releasing on 17 Mar, 2022</p>
+          <button>Book Tickets</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
